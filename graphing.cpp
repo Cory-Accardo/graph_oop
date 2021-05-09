@@ -18,11 +18,10 @@ Node* Graph::get_node(int id){
     return NULL;
 }
 
-Node* Graph::add_node(){
+void Graph::add_node(){
     Node* new_node = new Node();
     new_node->id = nodes.size();
     nodes.push_back(new_node);
-    return new_node;
 }
 
 void Graph::connect_nodes(int left_id, int right_id){

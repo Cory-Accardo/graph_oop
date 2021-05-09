@@ -16,7 +16,7 @@ class Graph {
     public:
         ~Graph();
         int get_size(); //returns the current number of nodes in the graph
-        Node* add_node(); //used to create a new distinct component node
+        void add_node(); //used to create a new distinct component node
         void connect_nodes(int left_id, int right_id); //pass the ids of the two nodes you want to connect
         void remove_node(int id); // pass the id of the node you want to remove
         void append_node(int id); //pass the node you want to attach to
