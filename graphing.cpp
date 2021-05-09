@@ -45,7 +45,7 @@ void Graph::remove_node(int id){
 void Graph::append_node(int id){
     Node* c_node = get_node(id);
     Node* new_node = new Node();
-    new_node->id = get_size();
+    new_node->id = nodes.size();
     new_node->prev = c_node;
     new_node->neighbors.push_back(c_node);
     c_node->neighbors.push_back(new_node);
